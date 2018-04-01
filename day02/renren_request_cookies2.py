@@ -5,9 +5,6 @@ import re
 1、首先使用浏览器登录网站
 2、获取cookie信息
 3、保存cookie信息放到请求头中
-
-
-
 """
 # 登录后用户信息页
 url = 'http://www.renren.com/963112933'
@@ -29,10 +26,10 @@ print(cookie)
 
 
 # 发送请求,利用requests模块中的cookies参数，来指定传入的cookie信息
-response = requests.get(url,headers=headers,cookies=cookie)
+response = requests.get(url, headers=headers, cookies=cookie)
 
 # 获取响应,并且解码成str,使用正则获取响应中的字符串
-print(re.findall('风雨',response.content.decode()))
+print(re.findall('风雨', response.content.decode()))
 print(response.status_code)
 
 
