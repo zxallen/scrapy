@@ -5,3 +5,6 @@ json模块的使用：
 
 
      dict_data = json.loads(data)  # 把数据转成字典   loads
+
+     # 转成字典
+    dict_data = json.loads(data_list)
