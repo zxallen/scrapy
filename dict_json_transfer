@@ -1,0 +1,7 @@
+json模块的使用：
+    json.dump()把字典转成jons字符串，写入文件
+    json.load()读取文件中json数据
+    如果遇到中文编码文档，设置ensure_ascii=False
+
+
+     dict_data = json.loads(data)  # 把数据转成字典   loads
